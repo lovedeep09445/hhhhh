@@ -25,7 +25,7 @@ weakest_student=subject_averages.idxmin()
 
 col1,col2=st.columns(2)
 col1.metric("Class Topper",f"{topper}({top_score}Marks)")
-col2.metric("Weakest Student(Class Avg)",f"{weakest_subject}({subject_averages.min():.1f})")
+col2.metric("Weakest Student(Class Avg)",f"{weakest_student}({subject_averages.min():.1f})")
 
 st.subheader("Student Marks Table")
 st.dataframe(df)
