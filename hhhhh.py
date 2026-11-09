@@ -43,7 +43,7 @@ with col_chart1:
 with col_chart2:
     st.subheader("Subject-wise Performance(Heatmap)")
     fig,ax=plt.subplots(figsize=(8,5))
-    colors(red/orange==low,green/blue==high)
+    colors(red/orange=low,green/blue=high)
     sns.heatmap(df[subjects],annot=True,cmap="Y1GnBu",fmt='d',ax=ax)
     st.pyplot(fig)
 
